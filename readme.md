@@ -9,3 +9,10 @@ Cependant, on peut aussi voir les choses comme suit
 - parmi toutes les choses que vous savez déjà, il y en aura certainement qui ont jusque là échappé à votre attention. Ce serait dommage de les rater
 - votre voisin.e est peut être moins à l'aise avec le sujet en cours, peut-être pouvez-vous l'aider ?
 - sur les sujets où vous en savez plus que le prof, partagez vos connaissances. Si on apprend tous, c'est encore mieux ! Sans non plus totalement perturber le cours, si on peut...
+
+
+Ordre proposé:
+1. [clavier](clavier/readme.md)
+1. [windows](windows/readme.md)
+1. [linux](linux/readme.md)
+1. [introduction au concept de base de données](BD/readme.md)
