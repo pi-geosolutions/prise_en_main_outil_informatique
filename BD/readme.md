@@ -213,12 +213,12 @@ source=ouvrages-acquis-par-les-mediatheques
 # On remplace le préfixe par défaut dans les VRT. Il permet qu'on ait chacun nos tables 
 # dans la base sanss'écraser les uns les autres
 sed -i "s/jpommier/$prefix/g" ${source}.vrt
-ogr2ogr -progress -f PostgreSQL PG:"host='localhost' user='cpgeom' dbname='cpgeom'" ${source}.vrt -lco OVERWRITE=YES
+ogr2ogr -progress -f PostgreSQL PG:"host='$PGHOST' user='$PGUSER' dbname='$PGDATABASE'" ${source}.vrt -lco OVERWRITE=YES
 # Et si ça s'est bien passé, on envoie le reste avec une boucle, c'est plus efficace : 
 for source in 2012-2022-balances-des-comptes-de-letat donnees-essentielles-mel-marches-publics logements-vacants-du-parc-prive-par-commune-au-01012021-lovac admin_express_communes_31  menu-cantine
 do
   sed -i "s/jpommier/$prefix/g" ${source}.vrt
-  ogr2ogr -progress -f PostgreSQL PG:"host='localhost' user='cpgeom' dbname='cpgeom'" ${source}.vrt -lco OVERWRITE=YES 
+  ogr2ogr -progress -f PostgreSQL PG:"host='$PGHOST' user='$PGUSER' dbname='$PGDATABASE'" ${source}.vrt -lco OVERWRITE=YES 
 done
 ```
 Pour alléger la ligne de commande, on a utilisé des variables d'environnement pour déclarer les paramètres de connexion. Je ne les ai pas nommées au hasard. Pour que psql et ogr les reconnaissent, il faut suivre une convention. Cf. https://docs.postgresql.fr/15/libpq-envars.html.
