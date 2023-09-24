@@ -41,7 +41,7 @@ Je vais sûrement en rater, mais en vrac :
 
 ## Arborescence système Linux
 Ca dépend un peu de la distribution utilisée. On va parler ici de Debian/Ubuntu. 
-TODO
+TODO: Ecrire un résumé
 
 ## Installer des logiciels
 Ca dépend un peu de la distribution utilisée. On va parler ici de Debian/Ubuntu. 
@@ -49,7 +49,7 @@ Ca dépend un peu de la distribution utilisée. On va parler ici de Debian/Ubunt
 Linux utilise un système de "stores" depuis bien avant que ça devienne la mode. La plupart des logiciels et librairies supportées par une distribution sont listées dans un grand magasin d'applications, auquel on accède de manière unifiée. On peut ajouter des dépôts pour agrandir la liste si besoin. Ensuite, un outil unique permet de chercher des entrées dans ce magasin, d'installer des logiciels, de faire des mises à jour, etc.
 
 Par exemple, si je veux utiliser la librairie GDAL/OGR dans linux, je vais juste demander à l'installer, et elle sera directement disponible sans complication, variable d'environnement ou quoi : 
-```
+```bash
 # sudo passe en mode admin le temps de la commande. 
 # apt est l'outil de gestion du "store". 
 # update : recharge la liste des applications
@@ -95,7 +95,7 @@ Editer un fichier ? `nano` pour les utilisateurs occasionnels, `vim` ou `emacs` 
 ### Boucles
 
 Par rapport au Powershell, la syntaxe est un peu plus simple : 
-```
+```bash
 for i in {1..5}
 do
     echo The value of i is: $i
@@ -103,7 +103,7 @@ done
 ```
 
 Ou pour une boucle sur une liste de chaines de caractères : 
-```
+```bash
 employees="Bijay Bhawana Padmini Lakshmi"
 for emp in $employees
 do
@@ -112,7 +112,7 @@ done
 ```
 
 Et enfin, pour reprendre l'exemple précédemment donné : 
-```
+```bash
 for f in $(ls -Sr midi-pyrenees-osm/*.shp)
 do
     ogr2ogr $(basename -- ${f%.*})_09.shp -clipsrc ../departement-ariege.shp -lco ENCODING=UTF-8 $f ;     
@@ -184,3 +184,6 @@ On peut même faire un pas de plus, et jouer à saute-mouton : ssh permet beauco
 *Note* : on peut aussi faire du ssh et même du tunneling depuis Windows, certains outils permettent ça, notamment le très connu `Putty`. Mais bon... comment faire mal, en 20 clics ce qu'une seule ligne de commande fait bien et proprement ? Ca s'eppelle en 5 lettres, ça commence par 'P'.
 
 
+---
+
+*Sujet suivant : [bases de données](../BD/readme.md)*

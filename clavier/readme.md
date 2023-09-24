@@ -72,6 +72,6 @@ Débranchez la souris. On va s'en passer.
 - Redémarrer l'ordi
 
 
+---
 
-
-la suite sur [windows](../windows/readme.md)
+*Sujet suivant : [windows](../windows/readme.md)*

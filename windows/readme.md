@@ -264,7 +264,7 @@ Il est parfois pratique de n'afficher que le début (ou la fin) d'un énorme fic
 #### Boucles
 
 La syntaxe de base est 
-```
+```powershell
 for (<Init>; <Condition>; <Repeat>) {
 
 <Script Block>
@@ -273,7 +273,7 @@ for (<Init>; <Condition>; <Repeat>) {
 ```
 
 Par exemple : 
-```
+```powershell
 for ($var = 1; $var -le 5; $var++) {
     Write-Host The value of Var is: $var
 }
@@ -281,7 +281,7 @@ Write-Host End of for loop.
 ```
 
 Ou pour une boucle sur une liste de chaines de caractères : 
-```
+```powershell
 $employees = @("Bijay","Bhawana","Padmini","Lakshmi")
 foreach ($emp in $employees) {
   $emp;
@@ -289,7 +289,7 @@ foreach ($emp in $employees) {
  ```
 
 Ou un exemple plus avancé, où l'on découpe avec ogr2ogr toute une série de données geospatiales : 
-```
+```powershell
 foreach($file in Get-ChildItem midi-pyrenees-osm/*.shp) {
     ogr2ogr.exe "$($file.BaseName)_09.shp" -clipsrc ../departement-ariege.shp -lco ENCODING=UTF-8 "$file"
 }
@@ -315,4 +315,6 @@ Dans le MS Store, vous trouverez une application appelée Windows Terminal. Elle
 
 Qu'est-ce qu'on s'amuse, hein ?
 
-la suite sur [linux](../linux/readme.md)
+---
+
+*Sujet suivant : [linux](../linux/readme.md)*
