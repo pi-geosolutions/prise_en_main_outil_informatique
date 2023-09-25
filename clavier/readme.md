@@ -29,33 +29,36 @@ Ca donne de bonnes bases. Si vous avez un temps mort durant les cours, vous pour
 
 Quels sont les raccourcis pour ?
 - Edition
-    - Copier
-    - Coller
-    - Couper
-    - Tout sélectionner
-    - Annuler la dernière action
-    - Restaurer la dernière action
-    - Enregistrer un fichier
-    - Enregistrer un fichier et définir le nom
-    - Texte en gras
-    - Texte en italique
-    - Chercher dans le texte
-    - Remplacer dans le texte
+    - Copier : Ctrl + C
+    - Coller : Ctrl + V
+    - Historique des copier : Win + V
+    - Couper : Ctrl + X
+    - Tout sélectionner : Ctrl + A
+    - Annuler la dernière action : Ctrl + Z
+    - Restaurer la dernière action Ctrl + Y
+    - Enregistrer un fichier : Ctrl + S
+    - Enregistrer un fichier et définir le nom : Ctrl + Shift + S
+    - Texte en gras : Ctrl + b
+    - Texte en italique : Ctrl + i
+    - Chercher dans le texte : Ctrl + F
+    - Remplacer dans le texte : Ctrl + H ou R
 - Actions sur les fichiers / fenêtres
-    - Ouvrir un fichier
-    - Créer un nouveau fichier
-    - Afficher les propriétés d'un fichier
-    - Quitter l'application
-    - Ouvrir le menu Windows
-    - Passer à l'élément suivant
-    - Afficher/masquer le bureau Windows
+    - Ouvrir un fichier : Ctrl + O
+    - Créer un nouveau fichier : Ctrl + N
+    - Afficher les propriétés d'un fichier : 
+    - Quitter l'application : Ctrl + Q
+    - Ouvrir le menu Windows : Win
+    - Passer à l'élément suivant : Tab
+    - Afficher/masquer le bureau Windows : Win + D
 - Dans le navigateur
-    - Ouvrir dans un nouvel onglet
-    - Fermer un onglet
-    - Restaurer un onglet fermé
-    - Restaurer une fenêtre fermée
-    - Recharger la page
-    - Revenir à la page précédente (historique-arrière)
+    - Ouvrir dans un nouvel onglet : bouton-milieu, Ctrl + bouton gauche, Ctrl + entrée
+    - Fermer un onglet : Ctrl + W
+    - Restaurer un onglet fermé : Ctrl + Shift + T
+    - Restaurer une fenêtre fermée : Ctrl + Shift + N
+    - Recharger la page : Ctrl + R
+    - Revenir à la page précédente (historique-arrière) : Alt + flèche gauche
+    - Faire défiler les onglets : Ctrl + Tab
+
 
 
 ### 3. Savoir se débrouiller sans la souris
